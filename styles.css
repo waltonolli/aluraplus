@@ -1,0 +1,166 @@
+:root {
+    --cor-primaria-texto: #FFFFFF;
+    --cor-secundaria-texto: #C0C0C0;
+    --cor-botoes: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: "Inter";
+    --botao-azul-efeito: #3791ff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-primaria-texto);
+    font-family: var(--fonte-principal), sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url("imagens/Background.png"); 
+    background-repeat: no-repeat; /*para não repetir a imagem na pagina inteira*/
+    background-size: contain; /*para cobrir toda a section*/
+    align-items: center;
+    text-align: center;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 3em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+}
+
+.container__botao {
+    background-color: var(--cor-botoes);
+    border-radius: 5px;
+    padding: 1em;
+    color: var(--cor-primaria-texto);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+/* .container__botao:visited {
+    color: blueviolet;
+} */
+
+.botao__assine__aluraplus {
+    background-color: transparent;
+    border: 2px solid var(--cor-primaria-texto);
+    
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cor-secundaria-texto);
+}
+
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 8em;
+}
+
+.secundario__descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-primaria-texto);
+    margin-bottom: 0.2em;
+}
+
+.secundario__descricao__texto {
+    color: var(--cor-secundaria-texto);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.secundario__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--cor-primaria-texto);
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__itenm {
+    font-size: 32px;
+    color: var(--cor-primaria-texto);
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 0;
+}
+
+.rodape__lista{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.rodape__texto{
+    font-size: 14px;
+    color: var(--cor-secundaria-texto);
+    margin: 1em 0;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--cor-primaria-texto);
+    margin-left: 1em;
+}
+
+.lista__link a:hover { /*altera cor quando passa o mouse*/
+    color: var(--cor-secundaria-texto);
+}
+
+.lista__link a:active { /*altera cor enquanto está com o icone esta clicado*/
+    color: var(--cor-botoes);
+}
+
+.lista__link a:visited {
+    color: blueviolet;
+}
+
